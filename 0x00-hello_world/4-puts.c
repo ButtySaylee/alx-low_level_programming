@@ -1,9 +1,9 @@
 #include <stdio.h>
 
-/*
- * main - printed strings char using puts
- * included a new line
- * Return: 0 upon after successful execution
+/**
+ * main - strings printed using puts
+ * followed by a new line
+ * Return: always 0 on (success)
  */
 
 int main(void)
