@@ -1,39 +1,56 @@
 #include <stdio.h>
+int chk_x(int x);
+
 /**
- * main - main block, solve fizz buzz from numbers 1 to 100
- * Description: Multiples of 3, print Fizz. Multiples of 5, print Buzz.
- * Multiples of borth 3 and 5 should print FizzBuzz
- * Return: 0
+ * main - checks numbers of multiple of 3 and 5
+ *
+ * Return: on success 0
  */
+
 int main(void)
 {
-	int i;
+	int x = 1, y;
 
-	while (i <= 100)
+	for (; x <= 100;)
 	{
-		if (i % 3 == 0 && i % 5 == 0)
-		{
-			printf("FizzBuzz");
-		}
-		else if (i % 3 == 0)
-		{
-			printf("Fizz");
-		}
-		else if (i % 5 == 0)
-		{
-			printf("Buzz");
-		}
-		else
-		{
-			printf("%i", i);
-		}
-		if (i != 100)
-		{
-			putchar(' ');
-		}
-
-		i++;
+		y = chk_x(x);
+		if (y == 0)
+			printf("%d ", x);
+		x++;
 	}
-	printf("\n");
+	return (0);
+}
+
+/**
+ * chk_x - checks numbers
+ * @x: numbers to check for if divisible by 3 1n3 5
+ * Return: 1 on true and 0 on false
+ */
+
+int chk_x(int x)
+{
+	int y = 0;
+
+	if (x % 15 == 0)
+	{
+		printf("FizzBuzz ");
+		y = 1;
+	}
+	else if (x % 3 == 0)
+	{
+		printf("Fizz ");
+		y = 1;
+	}
+	else if (x % 5 == 0)
+	{
+		printf("Buzz ");
+		y = 1;
+	}
+	else
+		x = x;
+	if (x == 100)
+		printf("\n");
+	if (y == 1)
+		return (1);
 	return (0);
 }
