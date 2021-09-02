@@ -1,5 +1,5 @@
 # C - Functions, nested loops
-0-holberton.c - A program that prints _putchar, followed by a new line.\
+0-putchar.c - A program that prints _putchar, followed by a new line.\
 1-alphabet.c - A function that prints the alphabet, in lowercase, followed by new line\
 2-print_alphatbet_x10.c - A function that prints 10 times the alphabet, in lowercase, followed by a new line\
 3-islower.c - A function that checks for lowercase character\
@@ -16,6 +16,5 @@
 102-fibonacci.c - A program that prints the first 50 Fibonacci numbers, starting with 1 and 2, followed by a new line.\
 103-fibonacci.c - A  program that finds and prints the sum of the even-valued terms of the Fibonacci suite under 4000000, followed by a new line.\
 104-fibonacci.c - A program that finds and prints the first 98 Fibonacci numbers, starting with 1 and 2, followed by a new line.\
-_putchar.c - contains the _putchar() function definition.\
-holberton.h - is the header file containing all the function prototypes used in this project.
+main.h - is the header file containing all the function prototypes used in this project.
 
