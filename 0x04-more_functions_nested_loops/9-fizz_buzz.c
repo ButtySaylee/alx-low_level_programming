@@ -1,56 +1,25 @@
-#include <stdio.h>
-int chk_x(int x);
-
+#include < stdio.h >
 /**
- * main - checks numbers of multiple of 3 and 5
- *
- * Return: on success 0
+ *main - prints numbers from 1-100.
+ *if number is multiple of 3 it prints Fizz.
+ *if number is multiple of 5 it prints Buzz.
+ * Return: 0 on success.
  */
-
 int main(void)
 {
-	int x = 1, y;
+	int i;
 
-	for (; x <= 100;)
+	for (i = 1; i <= 100; i++)
 	{
-		y = chk_x(x);
-		if (y == 0)
-			printf("%d ", x);
-		x++;
+		if (i % 3 == 0 && i % 5 == 0)
+			printf("FizzBuzz ");
+		else if (i % 3 == 0)
+			printf("Fizz ");
+		else if (i % 5 == 0)
+			printf("Buzz ");
+		else
+			printf("%d ", i);
 	}
-	return (0);
-}
-
-/**
- * chk_x - checks numbers
- * @x: numbers to check for if divisible by 3 1n3 5
- * Return: 1 on true and 0 on false
- */
-
-int chk_x(int x)
-{
-	int y = 0;
-
-	if (x % 15 == 0)
-	{
-		printf("FizzBuzz ");
-		y = 1;
-	}
-	else if (x % 3 == 0)
-	{
-		printf("Fizz ");
-		y = 1;
-	}
-	else if (x % 5 == 0)
-	{
-		printf("Buzz ");
-		y = 1;
-	}
-	else
-		x = x;
-	if (x == 100)
-		printf("\n");
-	if (y == 1)
-		return (1);
+	printf("\n");
 	return (0);
 }
